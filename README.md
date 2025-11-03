@@ -1,40 +1,104 @@
-# JSL04 Project Brief: Dynamic Task Display & Modal View
+# 🚀 Aphiwokuhle Kanban Board
 
-## Overview
+## 🧩 Project Overview
 
-In this project, you will dynamically display tasks from the **given initial data** on the DOM using JavaScript. Tasks should be placed into the correct **Kanban board columns** based on their status, and clicking a task should open a **modal** where users can view and modify task details. The project emphasizes **DOM manipulation, event handling, modular JavaScript structure, and responsive UI implementation.**
+The **Aphiwokuhle Kanban Board** is a dynamic task management web application designed to help users organize, visualize, and track their workflow efficiently.  
+It follows the **Kanban method**, where tasks are divided into stages such as **To Do**, **Doing**, and **Done**.  
+This project focuses on **DOM manipulation**, **modular JavaScript functions**, and **responsive CSS layouts**, aligning with modern UI design principles.
 
-## Before You Begin
+---
 
-**Check the project user stories in your student dashboard and the updated Figma Design** before you start building.
+## 🎯 Features
 
-## Figma Design Link
+- ✅ **Dynamic Task Rendering** – All tasks are displayed automatically from JavaScript data (no hardcoded HTML).  
+- ✅ **Interactive Columns** – Tasks are organized into “To Do”, “Doing”, and “Done” columns.  
+- ✅ **Task Modal Window** – Clicking on a task opens a modal with editable title, description, and status.  
+- ✅ **Responsive Design** – Fully responsive layout that adapts beautifully to desktop, tablet, and mobile screens.  
+- ✅ **Mobile-Optimized Interface** – Side panel and heading elements automatically hide or adjust on smaller devices.  
+- ✅ **Clean and Maintainable Code** – Uses modular, readable functions and descriptive variable names.
 
-Check the updated Figma Design: [Figma Link](https://www.figma.com/design/y7bFCUYL5ZHfPeojACBXg2/Challenges-%7C-JSL?node-id=0-1&p=f&t=Ki0CZk0RAjrk9Fhs-0)
+---
 
-## Key Objectives
+## 🧠 Technologies Used
 
-### Dynamic Task Display & Interaction
+- **HTML5** – Page structure and semantic layout  
+- **CSS3 (Grid & Flexbox)** – Responsive and modern styling  
+- **JavaScript (ES6)** – DOM manipulation and event handling  
+- **Responsive Web Design** – Mobile-first adjustments using media queries
 
-- Dynamically generate **task elements** from the given initial data and insert them into the DOM.
-- Ensure tasks are placed in the **correct columns** ("To Do", "In Progress", "Done") based on their status.
-- Clicking a task should **open a modal** displaying its details.
-- The modal should include:
-  - **Editable input fields** for the task title and description.
-  - **A select dropdown** showing the current status with other status options available.
-  - **A close button** that allows users to exit the modal easily.
+---
 
-### Design & Responsiveness
+## ⚙️ Setup Instructions
 
-- Ensure the **modal matches the Figma design**, including a **backdrop effect** for focus.
-- Implement a **fully responsive modal** that works on both desktop and mobile devices.
+Follow these steps to run the project locally:
 
-### Code Structure & Maintainability
+1. **Download or Clone this Repository:**
+   ```bash
+   git clone https://github.com/Aphiwo-kuhle/kanban-board.git
+   
+Open the Project Folder:
 
-- Structure JavaScript using **modular, single-responsibility functions**.
-- Use **descriptive and meaningful variable and function names** for clarity.
-- Add **JSDoc comments** to major functions, describing their purpose, parameters, and return values for better documentation.
 
-## Expected Outcome
+bash
+Copy code
+cd kanban-board
+Run the Project:
 
-A fully functional **dynamic task board** where tasks appear under the correct columns, and users can **open a modal to view/edit** task details. The project will follow **clean, well-documented, and maintainable code practices**, ensuring a professional and scalable implementation.
+
+Open the index.html file in your web browser.
+
+No additional installation or setup is required.
+
+
+💡 Usage Instructions
+
+
+Open the project in your browser.
+
+View all tasks under their correct columns:
+
+To Do: Tasks not started yet.
+
+Doing: Tasks currently in progress.
+
+Done: Completed tasks.
+
+Click any task to open a modal window, where you can:
+
+View the task details (title and description).
+
+See or change the current status from the dropdown.
+
+Click the Close (×) button to exit the modal and return to the board.
+
+On mobile, the side panel and heading bar automatically hide for a cleaner layout.
+
+
+
+✨ Future Improvements
+
+
+Add functionality to edit and save task changes.
+
+
+Allow users to create new boards and add tasks dynamically.
+
+
+Store task data using localStorage to save progress between sessions.
+
+
+
+👨‍💻 Author
+
+Aphiwokuhle Mavimbela
+Front-End Web Developer in Training
+
+📧 aphiwokuhlem2223@gmail.com
+
+
+🌐 LinkedIn Profile [www.linkedin.com/in/aphiwokuhle-mavimbela-78a6b836a]
+
+
+💻 GitHub Profile [https://github.com/Aphiwo-kuhle]
+
+

@@ -67,3 +67,5 @@ function openModal(task) {
 
 // ====== Run Function ======
 displayTasks();
+
+// Done 😎😎
