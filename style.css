@@ -1,0 +1,392 @@
+/* ====== GRID LAYOUT (Desktop) ====== */
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 250px 1fr 1fr 1fr; /* side-panel + 3 columns */
+  grid-template-rows: auto 1fr;
+  grid-template-areas: 
+    "side-panel heading heading heading"
+    "side-panel todo doing done";
+  background-color: #E4EBFA;
+}
+
+/* ====== SIDE PANEL ====== */
+.side-panel {
+  grid-area: side-panel;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.all-boards {
+  font-size: 11px;
+  color: #828FA3;
+  font-weight: 400;
+  text-align: center;
+}
+
+.button {
+  background-color: #635FC7;
+  border-radius: 24px;
+  height: 48px;
+  width: 100%;
+  color: white;
+  text-align: center;
+  line-height: 48px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+/* ====== HEADING BAR ====== */
+.heading {
+  grid-area: heading;
+  background-color: #ffffff;
+  text-align: left;
+  font-weight: 900;
+  height: 97px;
+  color: black;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.heading-left {
+  margin-left: 15px;
+}
+
+/* ====== COLUMNS ====== */
+.todo {
+  grid-area: todo;
+  background-color: #E4EBFA;
+  text-align: center;
+  font-weight: 900;
+  padding: 10px;
+}
+
+.doing {
+  grid-area: doing;
+  background-color: #E4EBFA;
+  text-align: center;
+  font-weight: 900;
+  padding: 10px;
+}
+
+.done {
+  grid-area: done;
+  background-color: #E4EBFA;
+  text-align: center;
+  font-weight: 900;
+  padding: 10px;
+}
+
+/* ====== TASK CARDS ====== */
+.task {
+  text-align: left;
+  width: auto;
+  height: 60px;
+  background-color: white;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* ====== COLUMN TITLES (with dots) ====== */
+.task-names {
+  font-size: 11px;
+  color: #828FA3;
+  text-align: left;
+  margin-left: 3%;
+  position: relative;
+}
+
+/* Add dot before each title */
+.task-names::before {
+  content: "";
+  display: inline-block;
+  width: 12px;   /* dot size */
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+/* Different dot colors */
+.todo-title::before {
+  background-color: #49C4E5; /* blue */
+}
+.doing-title::before {
+  background-color: #8471F2; /* purple */
+}
+.done-title::before {
+  background-color: #67E2AE; /* green */
+}
+
+/* ====== RESPONSIVE STYLES ====== */
+
+/* Tablet + Mobile (Flexbox ) */
+@media only screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column; /* stack items */
+    height: auto;
+    width: 100%;
+  }
+
+  .side-panel {
+    order: 1;
+    width: 100%;
+  }
+
+  .hidden {
+    display: none;
+  }
+  .heading {
+    display: none;
+  }
+
+  .todo, .doing, .done {
+    order: 3;
+    width: auto;
+    margin: 10px 0;
+  }
+
+  .task {
+    margin: 3%;
+    text-align: left;
+  }
+}
+.board {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.column {
+  width: 30%;
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.task {
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.hidden {
+  display: none;
+}
+/* ====== GRID LAYOUT (Desktop) ====== */
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 250px 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas: 
+    "side-panel heading heading heading"
+    "side-panel todo doing done";
+  background-color: #E4EBFA;
+}
+
+/* ====== SIDE PANEL ====== */
+.side-panel {
+  grid-area: side-panel;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.all-boards {
+  font-size: 11px;
+  color: #828FA3;
+  font-weight: 400;
+  text-align: center;
+}
+
+.button {
+  background-color: #635FC7;
+  border-radius: 24px;
+  height: 48px;
+  width: 100%;
+  color: white;
+  text-align: center;
+  line-height: 48px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+/* ====== HEADING BAR ====== */
+.heading {
+  grid-area: heading;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  height: 97px;
+  color: black;
+  font-weight: 900;
+}
+
+.heading-left {
+  margin-left: 15px;
+  
+}
+
+/* ====== COLUMNS ====== */
+.todo, .doing, .done {
+  background-color: #E4EBFA;
+  padding: 10px;
+  text-align: center;
+  font-weight: 900;
+}
+
+/* ====== TASK CARDS ====== */
+.task {
+  text-align: left;
+  width: auto;
+  background-color: white;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+
+/* ====== COLUMN TITLES (with dots) ====== */
+.task-names {
+  font-size: 11px;
+  color: #828FA3;
+  text-align: left;
+  margin-left: 3%;
+  position: relative;
+}
+
+.task-names::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.todo-title::before {
+  background-color: #49C4E5;
+}
+
+.doing-title::before {
+  background-color: #8471F2;
+}
+
+.done-title::before {
+  background-color: #67E2AE;
+}
+
+/* ====== MODAL ====== */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 320px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.close-btn {
+  float: right;
+  cursor: pointer;
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+input, textarea, select {
+  width: 100%;
+  margin-top: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* ====== RESPONSIVE ====== */
+@media only screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+  }
+
+  .side-panel {
+    order: 1;
+    width: 100%;
+  }
+
+  .heading {
+    display: none;
+  }
+
+  .todo, .doing, .done {
+    width: auto;
+    margin: 10px 0;
+  }
+
+  .task {
+    margin: 3%;
+    text-align: left;
+  }
+
+  .modal-content {
+    width: 90%;
+  }
+}
+/* Default (Laptop, Desktop) — Show content */
+.hidden {
+  display: block;
+}
+
+/* Small Screens (Phones) — Hide content */
+@media (max-width: 768px) {
+  .hidden {
+    display:none;
+  }
+}
