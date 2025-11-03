@@ -35,18 +35,24 @@ Follow these steps to run the project locally:
 1. **Download or Clone this Repository:**
    ```bash
    git clone https://github.com/Aphiwo-kuhle/kanban-board.git
+   
 Open the Project Folder:
+
 
 bash
 Copy code
 cd kanban-board
 Run the Project:
 
+
 Open the index.html file in your web browser.
 
 No additional installation or setup is required.
 
-💡 Usage Instructions
+
+##💡 Usage Instructions
+
+
 Open the project in your browser.
 
 View all tasks under their correct columns:
@@ -67,32 +73,32 @@ Click the Close (×) button to exit the modal and return to the board.
 
 On mobile, the side panel and heading bar automatically hide for a cleaner layout.
 
-🧱 Folder Structure
-bash
-Copy code
-kanban-board/
-│
-├── index.html        # Main HTML structure
-├── style.css         # Styling and responsive design
-└── script.js         # JavaScript logic and task interactivity
-📱 Responsive Design Preview
-Device	Description
-💻 Desktop	Shows full layout with side panel and top heading
-📱 Mobile	Simplified layout with hidden side panel and adaptive columns
 
-✨ Future Improvements
+
+##✨ Future Improvements
+
+
 Add functionality to edit and save task changes.
+
 
 Allow users to create new boards and add tasks dynamically.
 
+
 Store task data using localStorage to save progress between sessions.
 
-👨‍💻 Author
+
+
+##👨‍💻 Author
+
 Aphiwokuhle Mavimbela
 Front-End Web Developer in Training
 
 📧 aphiwokuhlem2223@gmail.com
-🌐 LinkedIn Profile
-💻 GitHub Profile
+
+
+🌐 LinkedIn Profile [www.linkedin.com/in/aphiwokuhle-mavimbela-78a6b836a]
+
+
+💻 GitHub Profile [https://github.com/Aphiwo-kuhle]
 
 
