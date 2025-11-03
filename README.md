@@ -50,7 +50,7 @@ Open the index.html file in your web browser.
 No additional installation or setup is required.
 
 
-##💡 Usage Instructions
+💡 Usage Instructions
 
 
 Open the project in your browser.
@@ -75,7 +75,7 @@ On mobile, the side panel and heading bar automatically hide for a cleaner layou
 
 
 
-##✨ Future Improvements
+✨ Future Improvements
 
 
 Add functionality to edit and save task changes.
@@ -88,7 +88,7 @@ Store task data using localStorage to save progress between sessions.
 
 
 
-##👨‍💻 Author
+👨‍💻 Author
 
 Aphiwokuhle Mavimbela
 Front-End Web Developer in Training
