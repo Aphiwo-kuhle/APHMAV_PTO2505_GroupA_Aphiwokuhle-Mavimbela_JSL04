@@ -1,11 +1,12 @@
-🚀 Aphiwokuhle Kanban Board
-🧩 Project Overview
+##🚀 Aphiwokuhle Kanban Board
+
+#🧩 Project Overview
 
 The Aphiwokuhle Kanban Board is a dynamic task management web application designed to help users organize, visualize, and track their workflow efficiently.
 It follows the Kanban method, where tasks are divided into stages such as To Do, Doing, and Done.
 This project focuses on DOM manipulation, modular JavaScript functions, and responsive CSS layouts, aligning with modern UI design principles.
 
-🎯 Features
+##🎯 Features
 
 ✅ Dynamic Task Rendering – All tasks are displayed automatically from JavaScript data (no hardcoded HTML).
 ✅ Interactive Columns – Tasks are organized into “To Do”, “Doing”, and “Done” columns.
@@ -14,7 +15,7 @@ This project focuses on DOM manipulation, modular JavaScript functions, and resp
 ✅ Mobile-Optimized Interface – Side panel and heading elements automatically hide or adjust on smaller devices.
 ✅ Clean and Maintainable Code – Uses modular, readable functions and descriptive variable names.
 
-🧠 Technologies Used
+##🧠 Technologies Used
 
 HTML5 – Page structure and semantic layout
 
@@ -24,7 +25,7 @@ JavaScript (ES6) – DOM manipulation and event handling
 
 Responsive Web Design – Mobile-first adjustments using media queries
 
-⚙️ Setup Instructions
+##⚙️ Setup Instructions
 
 Follow these steps to run the project locally:
 
@@ -42,7 +43,7 @@ Run the Project:
 Simply open the index.html file in your web browser.
 No additional installation or setup is required.
 
-💡 Usage Instructions
+##💡 Usage Instructions
 
 Open the project in your browser.
 
@@ -64,15 +65,15 @@ Click the Close (×) button in the modal to exit and return to the board.
 
 On mobile, the side panel and heading bar automatically hide for a cleaner view.
 
-🧱 Folder Structure
+##🧱 Folder Structure
 kanban-board/
 │
 ├── index.html        # Main HTML structure
 ├── style.css         # Styling and responsive design
 └── script.js         # JavaScript logic and task interactivity
 
-📱 Responsive Design Preview
-Device	Description
+##📱 Responsive Design Preview
+#Device	Description
 💻 Desktop	Shows full layout with side panel and top heading
 📱 Mobile	Simplified layout with hidden side panel and adaptive columns
 ✨ Future Improvements
@@ -83,9 +84,13 @@ Allow users to create new boards and add tasks dynamically.
 
 Store task data using localStorage to save progress between sessions.
 
-👨‍💻 Author
+##👨‍💻 Author
 
-Aphiwokuhle [Your Surname]
+Aphiwokuhle [https://github.com/Aphiwo-kuhle]
+
 Front-End Web Developer in Training
+
 📧 [aphiwokuhlem2223@gmail.com]
+
+ 
 🌐 [www.linkedin.com/in/aphiwokuhle-mavimbela-78a6b836a]
